@@ -40,7 +40,18 @@ var questions = [
         answers:["5","10","SyntaxError","TypeError"],
         correctAnswer:"SyntaxError"
     },
-]
-var interval = setInterval(function() {
+];
+var timerCounter = 100, questionCounter = 0;
 
-}, 1000);
+document.querySelector('#startButton').addEventListener('click', function(event){
+    event.preventDefault();
+    var interval = setInterval(function() {
+        document.querySelector('#timeRemaining').textContent = timerCounter;
+        document.querySelector('#welcome').style.display = 'none';
+        if(timerCounter === 0 || questionCounter > questions.length) {
+            clearInterval(interval)
+        } else {
+            timerCounter--;
+        }
+    }, 1000);
+})
