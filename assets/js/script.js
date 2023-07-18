@@ -25,9 +25,9 @@ var questions = [
         answers:["push()","pop()","shift()","unshift()"],
         correctAnswer:"pop()"
     },{
-        question:"What is the output of the following code?",
-        answers:["\"null\"","\"undefined\"","\"object\"","\"boolean\""],
-        correctAnswer:"\"object\""
+        question:"What does the \"typeof\" operator return in JavaScript?",
+        answers:["The value's data type","The value's memory address","The value's length","The value's index in an array"],
+        correctAnswer:"The value's data type"
     },{
         question:"What does the === operator do in JavaScript?",
         answers:["Checks for equality of both value and type","Checks for equality of value only","Checks for equality of type only","Assigns a value to a variable"],
