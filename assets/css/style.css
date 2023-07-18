@@ -9,19 +9,76 @@ header a {
     color:purple;
 }
 
+p, label {
+    margin-top:10px;
+}
+
+input {
+    padding:5px;
+}
+
 h1 {
-    font-size: 20px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
 }
 
 button {
     background-color: purple;
     color:white;
     padding:10px;
+    display:block;
+    margin: 10px auto;
 }
+
+code {
+    display: block;
+    font-family: monospace;
+    background: gray;
+    color:white;
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: 5px;
+    margin:5px;
+    border-radius: .2rem;
+  }
 
 .center{
     text-align: center;
     max-width: 500px;
     margin:auto;
     padding:10px;
+}
+
+.left{
+    max-width: 500px;
+    margin:auto;
+    padding:10px;
+}
+
+.answer {
+    min-width: 220px;
+    text-align: left;
+}
+
+.inline-button {
+    display:inline;
+    margin:5px;
+}
+
+#initialEntryButton {
+    display: inline;
+}
+
+#result {
+    font-style: italic;
+    font-weight: 100;
+}
+
+#scoreList {
+    margin-top:10px;
+    background-color: #EFE7F7;
+    padding: 5px;
 }

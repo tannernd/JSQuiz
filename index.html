@@ -10,7 +10,7 @@
 <body>
     <header>
         <div id="highScoreLink"><a>View High Scores</a></div>
-        <div id="timer">Time: <span id="timeRemaining">0</span></div>
+        <div id="timer">Time: <span id="timeRemaining">0.00</span></div>
         
     </header>
     <main>
@@ -28,11 +28,27 @@
                 <button id="startButton">Start Quiz</button>
             </div>
         </div>
-        <div id="questions"">
+        <div id="questions" class="left">
         </div>
-        <div id="answers">
-        </div>  
-        <div id="highScores">
+        <div id="answers" class="left">
+        </div>          
+        <div id="highScoresEntry" class="left" style="display: none;">
+            <h2>All Done!</h2>
+            <p>Your final score is <span id="finalScore">0</span></p>
+            <label for="initialEntry">Enter initials:</label>
+            <input type="text" id="initialEntry" name="initialEntry">
+            <button id="initialEntryButton">submit</button>
+        </div>
+        <div id="highScores" class="left" style="display: none;">
+            <h2>High Scores</h2>
+            <div id="scoreList">
+            </div>
+            <button id="goBack" class="inline-button">Go Back</button>
+            <button id="clearHighScores" class="inline-button">Clear High Scores</button>
+        </div>
+        <div id="result" class="left" style="display: none;">
+            <hr>
+            <p id="resultWord">Correct!</p>
         </div>
     </main>
     <script src="./assets/js/script.js"></script>
