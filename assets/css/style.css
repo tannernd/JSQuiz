@@ -7,7 +7,7 @@ header {
 
 header a {
     cursor: pointer;
-    color:purple;
+    color:#bc5ee6;
 }
 
 p, label {
@@ -27,11 +27,17 @@ h2 {
 }
 
 button {
-    background-color: purple;
+    background-color: #351c75;
     color:white;
     padding:10px;
     display:block;
     margin: 10px auto;
+    border:none;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: #bc5ee6;
 }
 
 code {
