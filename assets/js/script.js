@@ -18,7 +18,7 @@ var questions = [
         correctAnswer:"Array.isArray(variable)"
     },{
         question:"What is the scope of a variable declared with the let keyword?",
-        answers:["Global scope","Local scope","Block scope","Function Scope"],
+        answers:["Global scope","Local scope","Block Scope","Function Scope"],
         correctAnswer:"Block Scope"
     },{
         question:"Which method is used to remove the last element from an array in JavaScript?",
